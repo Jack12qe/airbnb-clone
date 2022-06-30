@@ -31,4 +31,4 @@ class Review(core_models.TimeStampedModel):
             + self.value
             + self.communication
         ) / 6
-        return round(avg, 2)
+        return round(avg, 1)
