@@ -1,8 +1,21 @@
 {
-    "python.defaultInterpreterPath": "python",
-    "python.formatting.provider": "black",
-    "python.linting.lintOnSave": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.linting.flake8Args": ["--max-line-length=88"]
+  "python.defaultInterpreterPath": "python",
+  "python.formatting.provider": "black",
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=88"],
+  "python.linting.pylintEnabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[jinja]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
 }
