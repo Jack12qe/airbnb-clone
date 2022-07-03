@@ -1,7 +1,7 @@
-from django.views.generic import ListView
-from django.urls import reverse
-from django.shortcuts import render, redirect
-from . import models
+from django.views.generic import ListView, DetailView
+from django.shortcuts import render
+from django_countries import countries
+from . import models, forms
 
 
 class HOME_VIEW(ListView):
@@ -14,9 +14,18 @@ class HOME_VIEW(ListView):
     context_object_name = "rooms"
 
 
-def room_detail(request, pk):
-    try:
-        room = models.Room.objects.all()
-        return render(request, "rooms/detail.html", {"room": room})
-    except models.Room.DoesNotExist:
-        return redirect(reverse("core:home"))
+class RoomDetail(DetailView):
+    """RoomDetail Definition"""
+
+    model = models.Room
+
+
+def search(request):
+
+    form = forms.SearchForm
+
+    return render(
+        request,
+        "rooms/search.html",
+        {"form": form},
+    )
