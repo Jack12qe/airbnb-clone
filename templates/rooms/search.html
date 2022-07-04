@@ -10,6 +10,8 @@
         {{ form.as_p }}
         <button>Search</button>
     </form>
-    <h3>Results</h3>
-    {% for room in rooms %}<h3>{{ room.name }}</h3>{% endfor %}
+    {% if rooms != None %}
+        <h3>Results</h3>
+        {% for room in rooms %}<h3>{{ room.name }}</h3>{% endfor %}
+    {% endif %}
 {% endblock content %}
