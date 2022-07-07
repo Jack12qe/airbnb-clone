@@ -12,6 +12,7 @@ psycopg2 = "*"
 django-extensions = "*"
 djlint = "*"
 django-dotenv = "*"
+requests = "*"
 
 [dev-packages]
 flake8 = "*"
