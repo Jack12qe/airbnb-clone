@@ -167,3 +167,4 @@ migrations/
 
 # upload files
 uploads/
+node_modules/

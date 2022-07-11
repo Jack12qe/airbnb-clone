@@ -1,15 +1,15 @@
+{% load static %}
 <header>
-  <a href=" {% url 'core:home' %}">Nbnb</a>
   <ul>
     {% if user.is_authenticated %}
-      <li>
+      <li class="ml-8">
         <a href="{% url "users:logout" %}">Log out</a>
       </li>
     {% else %}
-      <li>
+      <li class="ml-8">
         <a href="{% url "users:login" %}">Log in</a>
       </li>
-      <li>
+      <li class="ml-8">
         <a href="{% url "users:signup" %}">Sign Up</a>
       </li>
     {% endif %}
