@@ -9,7 +9,7 @@
         </div>
         <div class="flex flex-wrap -mx-10 mb-10">
             {% for room in rooms %}
-                {% include "partials/room_card.html" with room=room %}
+                {% include "mixins/auth/room_card.html" with room=room %}
             {% endfor %}
         </div>
         <div class="container justify-center flex items-center mx-auto">
