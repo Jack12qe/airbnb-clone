@@ -77,7 +77,7 @@ class RoomAdmin(admin.ModelAdmin):
         "country",
     )
     raw_id_fields = ("host",)
-    search_fields = ["=city", "^host__username"]
+    search_fields = ["=city", "^host__username", "name"]
     filter_horizontal = ("amenities", "facilities", "house_rules")
 
     def count_amenities(self, obj):
