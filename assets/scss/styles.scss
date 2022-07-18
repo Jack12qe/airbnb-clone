@@ -96,4 +96,8 @@ form {
     @apply border-b border-gray-400 pb-8 mt-8;
 }
 
+.cal-grid {
+    @apply grid grid-cols-7 gap-2.5 justify-self-center;
+}
+
 @tailwind utilities;
