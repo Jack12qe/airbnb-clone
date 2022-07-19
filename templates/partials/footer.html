@@ -1,4 +1,21 @@
 {% load i18n %}
-<footer class="container justify-center mx-auto text-center py-10 border-t font-medium text-gray-500 flex flex-col">
-  <span>&copy; Nbnb 2022, Inc. {% trans 'This is clone-coding of airbnb' %}.</span>
+<footer class="container justify-center mx-auto text-center py-10 border-t font-medium text-gray-500">
+  <div class="flex flex-col">
+    <span>&copy; Nbnb 2022, Inc. {% trans 'This is clone-coding of airbnb' %}.</span>
+  </div>
+  <div class="mt-10 flex">
+    {% get_current_language as LANGUAGE_CODE %}
+    <select class="w-1/6" id="js-lang">
+      <option value="en"
+              class="text-lg"
+              {% if LANGUAGE_CODE == "en" %}selected{% endif %}>
+        English
+      </option>
+      <option value="jp"
+              class="text-lg"
+              {% if LANGUAGE_CODE == "jp" %}selected{% endif %}>
+        Japanese
+      </option>
+    </select>
+  </div>
 </footer>
