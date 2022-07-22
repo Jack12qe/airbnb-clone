@@ -173,7 +173,7 @@ class EditPhotoView(user_mixins.LoggedInOnlyView, SuccessMessageMixin, UpdateVie
     template_name = "rooms/photo_edit.html"
     # UpdateView's pk is set to 'pk' in default,
     # but because of 'pk_url_kwarg' setting,
-    # it can recognize 'photo_pk' to 'pk'
+    # it can recognize 'photo_pk' as 'pk'
     pk_url_kwarg = "photo_pk"
     success_message = "Photo Updated"
     fields = ("caption",)

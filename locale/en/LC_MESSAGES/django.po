@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-21 18:08+0900\n"
+"POT-Creation-Date: 2022-07-21 18:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,70 +17,68 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\command_learned\2. django사용법\django.translation.txt:4
 msgid "<some sentence>"
-msgstr "何らかの文章"
+msgstr ""
 
 #: .\templates\base.html:28
 msgid "Search by City"
-msgstr "都市から探す"
+msgstr ""
 
 #: .\templates\partials\footer.html:4
 msgid "This is clone-coding of airbnb"
-msgstr "これはAirbnbのクローンコーディングです"
+msgstr ""
 
 #: .\templates\rooms\room_list.html:22
-#| msgid "Page %(current_page)s of %(total_pages)s\n"
+#, python-format
 msgid ""
 "\n"
 "                    Page %(current_page)s of %(total_pages)s\n"
 "                "
 msgstr ""
-"\n"
-"                    ページ %(current_page) 中 %(total_pages)s\n"
-"                "
 
 #: .\users\mixins.py:22
 msgid "Cannot access"
-msgstr "アクセスできない"
+msgstr ""
 
 #: .\users\models.py:22
 msgid "Male"
-msgstr "男性"
+msgstr ""
 
 #: .\users\models.py:23
 msgid "Female"
-msgstr "女性"
+msgstr ""
 
 #: .\users\models.py:24
 msgid "Other"
-msgstr "他"
+msgstr ""
 
 #: .\users\models.py:32
 msgid "English"
-msgstr "英語"
+msgstr ""
 
 #: .\users\models.py:33
 msgid "Korean"
-msgstr "韓国語"
+msgstr ""
 
 #: .\users\models.py:34
 msgid "Japan"
-msgstr "日本語"
+msgstr ""
 
 #: .\users\models.py:60
 msgid "gender"
-msgstr "性"
+msgstr ""
 
 #: .\users\models.py:62
 msgid "bio"
-msgstr "自己紹介"
+msgstr ""
 
 #: .\users\models.py:65
 msgid "language "
-msgstr "言語"
+msgstr ""
 
 #: .\users\models.py:92
 msgid "Verify Airbnb Account"
-msgstr "Airbnbアカウントを証明"
+msgstr ""
